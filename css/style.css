@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
@@ -111,6 +115,7 @@ header {
     height: 25px;
     cursor: pointer;
     z-index: 101; /* Above navigation */
+    background-color: var(--yellow); /* FOR TESTING: to check visibility */
 }
 
 .hamburger-menu .bar {
