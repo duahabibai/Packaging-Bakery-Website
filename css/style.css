@@ -843,7 +843,8 @@ footer {
         }
 
         .hero-carousel {
-            padding-bottom: 60%; /* Adjust aspect ratio for smaller tablets */
+            padding-bottom: 70%; /* Adjust aspect ratio for smaller tablets */
+            min-height: 400px; /* Ensure minimum height */
             margin-bottom: 2rem;
         }
     
@@ -853,11 +854,11 @@ footer {
         }
 
         .hero-content h1 {
-            font-size: 2.2rem;
+            font-size: 2rem; /* Slightly smaller h1 */
         }
     
         .hero-content p {
-            font-size: 1rem;
+            font-size: 0.95rem; /* Slightly smaller p */
         }
     
         .product-grid,
@@ -887,7 +888,8 @@ footer {
 
     @media (max-width: 576px) {
         .hero-carousel {
-            padding-bottom: 70%; /* Adjust aspect ratio for large phones */
+            padding-bottom: 80%; /* Adjust aspect ratio for large phones */
+            min-height: 350px; /* Ensure minimum height */
         }
 
         .hero-content {
@@ -895,12 +897,12 @@ footer {
         }
 
         .hero-content h1 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-bottom: 0.8rem;
         }
 
         .hero-content p {
-            font-size: 0.9rem;
+            font-size: 0.85rem; /* Adjusted for readability */
             margin-bottom: 1.5rem;
         }
 
@@ -922,15 +924,16 @@ footer {
     
     @media (max-width: 480px) {
         .hero-carousel {
-            padding-bottom: 80%; /* Adjust aspect ratio for small phones */
+            padding-bottom: 90%; /* Adjust aspect ratio for small phones */
+            min-height: 300px; /* Ensure minimum height */
         }
 
         .hero-content h1 {
-            font-size: 1.6rem;
+            font-size: 1.4rem; /* Further reduce h1 font size */
         }
     
         .hero-content p {
-            font-size: 0.8rem;
+            font-size: 0.8rem; /* Further reduce p font size */
             margin-bottom: 1rem;
         }
     
@@ -961,16 +964,17 @@ footer {
 
     @media (max-width: 380px) {
         .hero-carousel {
-            padding-bottom: 90%; /* Adjust aspect ratio for very small phones */
+            padding-bottom: 100%; /* Make it more square for very small phones */
+            min-height: 250px; /* Ensure minimum height */
         }
         .hero-content h1 {
-            font-size: 1.4rem;
+            font-size: 1.2rem; /* Further reduced h1 */
         }
         .hero-content p {
-            font-size: 0.75rem;
+            font-size: 0.7rem; /* Further reduced p */
         }
         .cta-button {
-            padding: 0.6rem 1rem;
-            font-size: 0.75rem;
+            padding: 0.5rem 0.9rem;
+            font-size: 0.7rem;
         }
     }
