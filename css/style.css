@@ -75,6 +75,7 @@ header {
     color: var(--cream);
     text-decoration: none;
     font-weight: 600;
+    font-size: 1rem; /* Explicitly set font size */
     transition: color 0.3s ease, transform 0.3s ease; /* Added transform for subtle animation */
     position: relative; /* For underline effect */
     padding-bottom: 5px; /* Space for underline */
@@ -151,13 +152,13 @@ header {
 }
 
 .mobile-nav-overlay ul li {
-    margin: 2rem 0; /* Increased margin for overlay links */
+    margin: 1.5rem 0; /* Adjusted margin for overlay links */
 }
 
 .mobile-nav-overlay ul li a {
     color: var(--cream);
     text-decoration: none;
-    font-size: 2rem; /* Larger font for overlay links */
+    font-size: 1.5rem; /* Adjusted font for overlay links */
     font-weight: 600;
     transition: color 0.3s ease;
     padding: 0; /* No extra padding */
@@ -549,7 +550,7 @@ footer {
 }
 
 .feature-card i {
-    font-size: 3.5rem; /* Larger icons */
+    font-size: 3rem; /* Reduced icon size */
     color: var(--yellow); /* Yellow icons */
     margin-bottom: 1.5rem;
 }
