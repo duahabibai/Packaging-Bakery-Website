@@ -911,6 +911,10 @@ footer {
             font-size: 0.85rem;
         }
 
+        .carousel-nav button {
+            display: none; /* Hide carousel navigation buttons on small devices */
+        }
+
         .featured-products h2,
         .why-choose-us h2,
         .box-stack-images h2 {
