@@ -115,7 +115,6 @@ header {
     height: 25px;
     cursor: pointer;
     z-index: 101; /* Above navigation */
-    background-color: var(--yellow); /* FOR TESTING: to check visibility */
 }
 
 .hamburger-menu .bar {
