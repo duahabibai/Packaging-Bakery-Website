@@ -65,27 +65,27 @@ header {
     vertical-align: middle;
 }
 
+.main-nav {
+    display: flex;
+}
 .main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-
 .main-nav ul li {
-    margin: 0 1.2rem; /* Slightly more spacing */
+    margin: 0 1.2rem;
 }
-
 .main-nav ul li a {
     color: var(--cream);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem; /* Explicitly set font size */
-    transition: color 0.3s ease, transform 0.3s ease; /* Added transform for subtle animation */
-    position: relative; /* For underline effect */
-    padding-bottom: 5px; /* Space for underline */
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
 }
-
 .main-nav ul li a::after {
     content: '';
     position: absolute;
@@ -96,27 +96,23 @@ header {
     background-color: var(--yellow);
     transition: width 0.3s ease-out;
 }
-
 .main-nav ul li a:hover {
     color: var(--yellow);
-    transform: translateY(-2px); /* Subtle lift on hover */
+    transform: translateY(-2px);
 }
-
 .main-nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Hamburger menu */
 .hamburger-menu {
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
     height: 25px;
     cursor: pointer;
-    z-index: 101; /* Above navigation */
+    z-index: 1001;
 }
-
 .hamburger-menu .bar {
     width: 100%;
     height: 3px;
@@ -124,6 +120,28 @@ header {
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+
+
 
 
 
@@ -279,7 +297,7 @@ footer {
     position: relative;
     width: 100%;
     height: 0; /* Aspect ratio controlled by padding-bottom */
-    padding-bottom: 45%; /* Adjusted aspect ratio for slightly taller hero */
+    padding-bottom: 38%; /* Adjusted aspect ratio for slightly taller hero */
     overflow: hidden; /* Hides overflowing slides */
     margin-bottom: 4rem; /* Spacing below carousel */
     background-color: var(--maroon); /* Fallback background */
@@ -942,4 +960,18 @@ footer {
         h3 { /* General h3 adjustment */
             font-size: 1.2rem;
         }
+    }
+
+    .page-title {
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }
+    .contact-logo-container {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .contact-logo {
+        max-height: 100px;
+        width: auto;
     }
